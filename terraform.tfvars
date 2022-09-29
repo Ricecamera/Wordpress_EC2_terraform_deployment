@@ -7,3 +7,5 @@ database_user     = "username"
 database_pass     = "password"
 admin_user        = "admin"
 admin_pass        = "admin"
+ec2_instance_type = "t2.micro"
+root_volume_size  = 22
