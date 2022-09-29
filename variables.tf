@@ -129,10 +129,8 @@ variable "resource_tags" {
 variable "PUBLIC_KEY_PATH" {
   description = "public key ofr ssh connection to ec2 instance"
   type        = string
-  default     = "./mykey-pair.pub"
 }
 
 variable "PRIV_KEY_PATH" {
   description = "private key ofr ssh connection to ec2 instance"
-  default     = "./mykey-pair"
 }
