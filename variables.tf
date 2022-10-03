@@ -35,6 +35,12 @@ variable "admin_pass" {
   default     = "admin"
 }
 
+variable "admin_email" {
+  description = "WordPress's admin email"
+  type        = string
+  default     = "example@email.com"
+}
+
 # instance specifaction
 variable "ec2_instance_type" {
   description = "AWS EC2 instance type."
@@ -111,7 +117,7 @@ variable "resource_tags" {
   description = "Tags to set for all resources"
   type        = map(string)
   default     = {
-    project     = "my-project",
+    project     = "sds-midterm",
     environment = "dev"
   }
 
