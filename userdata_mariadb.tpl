@@ -19,8 +19,7 @@ echo "bind-address = 0.0.0.0" | sudo tee -a /etc/mysql/my.cnf
 systemctl restart mariadb
 
 # Create WordPress Database
-sudo mysql << EOF
+mysql << EOF
 create database ${db_name};
 grant all privileges on ${db_name}.* to ${username}@'%' identified by '${password}';
 EOF
-

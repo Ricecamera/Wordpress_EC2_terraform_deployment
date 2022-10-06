@@ -45,11 +45,13 @@ variable "admin_email" {
 variable "ec2_instance_type" {
   description = "AWS EC2 instance type."
   type        = string
+  default = "t2.micro"
 }
 
 variable "root_volume_size" {
   description = "Storage size for ec2 instance"
   type        = number
+  default = 20
 }
 
 variable "ami" {
@@ -68,12 +70,6 @@ variable "availability_zone" {
   description = "Avaibility zone"
   type        = string
   default     = "ap-southeast-1a"
-}
-
-variable "availability_zone_2" {
-  description = "Avaibility zone"
-  type        = string
-  default     = "ap-southeast-1b"
 }
 
 variable "vpc_cidr" {
@@ -139,4 +135,5 @@ variable "PUBLIC_KEY_PATH" {
 
 variable "PRIV_KEY_PATH" {
   description = "private key ofr ssh connection to ec2 instance"
+  type        = string
 }

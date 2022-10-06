@@ -7,9 +7,3 @@ database_user     = "username"
 database_pass     = "password"
 admin_user        = "admin"
 admin_pass        = "admin"
-admin_email       = "example@email.com"
-ec2_instance_type = "t2.micro"
-root_volume_size  = 20
-
-PUBLIC_KEY_PATH   = "../key-pair/mykey-pair.pub"
-PRIV_KEY_PATH     = "../key-pair/mykey-pair"
